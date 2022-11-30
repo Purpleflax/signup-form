@@ -1,15 +1,14 @@
-function checkPasswords(form) {
-    console.log("Here");
-    let pass = form.password.value;
-    let passConfirm = form.password_confirm.value;
+function checkPasswords() {
+    let pass = document.getElementById("password");
+    let passConfirm = document.getElementById("password_confirm");
     let errorSlot = document.getElementById("error");
-    console.log(pass);
-    console.log(passConfirm);
-    if (pass != passConfirm) {
-        console.log("here 3");
+    if (pass.value != passConfirm.value) {
         errorSlot.innerText = "* The passwords do not match!";
         document.querySelector("#button").disabled = true;
+        errorSlot.style.color = "yellow"
     } else {
+        errorSlot.innerText = "✓ The passwords match."
         document.querySelector("#button").disabled = false;
+        errorSlot.style.color = "green"
     }
 }
