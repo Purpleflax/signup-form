@@ -1,3 +1,164 @@
-h1 {
-    color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftSidebar {
+    height: 100vh;
+    width: 38vw;
+    display: flex;
+    align-items: center;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#title {
+    height: 13vh;
+    width: 100%;
+    margin-bottom: 45vh;
+    background-color: rgba(7, 6, 6, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#titleImg {
+    height: 12vh;
+}
+
+#titleText {
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+p {
+    color: rgb(177, 176, 176);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#gapP {
+    margin-top: 5vh;
+}
+
+#rightSidebar {
+    height: 100vh;
+    width: 62vw;
+    background-color: black;
+}
+
+#topText {
+    padding-top: 15vh;
+    padding-left: 3vw;
+    padding-right: 8vw;
+    height: 30vh;
+}
+
+#form {
+    height: 30vh;
+    padding-left: 3vw;
+    padding-right: 8vw;
+}
+
+#submitButton {
+    padding-left: 3vw;
+    padding-right: 8vw;
+    height: 15vh;
+}
+
+#prevLogin {
+    padding-left: 3vw;
+    padding-right: 8vw;
+    height: 15vh;
+}
+
+#formActual {
+    display: flex;
+    gap: 3vw;
+}
+
+#formIntro {
+    margin-bottom: 3vh;
+}
+
+.formLine {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+input {
+    width: 22vw;
+    height: 1.5vh;
+    margin-bottom: 2vh;
+    border-width: 0.5px;
+    border-color: #323a49;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(136, 5, 5);
+}
+
+label {
+    color: #54585f;
+    font-size: 0.75rem;
+}
+
+button {
+    background-color: black;
+    font-weight: bolder;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 5px;
+    border-width: 3px;
+    font-size: 1.5rem;
+    border-color: rgb(136, 5, 5);
+    color: rgb(136, 5, 5);
+}
+
+button:hover {
+    background-color:rgb(136, 5, 5);
+    color: black;
+}
+
+#prevLogin {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#error {
+    height: 1vh;
+}
+
+a, a:active, a:hover, a:visited {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(136, 5, 5);
 }
